@@ -40,7 +40,6 @@ function Login(props) {
     }).then((res) => console.log(res));
     setAuthenticated(true);
     dispatch(login);
-    setRegistered(true)
 
   };
 

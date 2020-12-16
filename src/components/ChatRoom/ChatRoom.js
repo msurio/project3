@@ -9,12 +9,7 @@ import Input from '../ChatComps/Input/Input';
 
 import './ChatRoom.css';
 
-
-
 let socket  ;
-
-
-
 
 const Chat = ({ location }) => {
   const [name, setName] = useState('');
@@ -24,7 +19,6 @@ const Chat = ({ location }) => {
   const [messages, setMessages] = useState([]);
 
   const ENDPOINT = "/";
-
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
